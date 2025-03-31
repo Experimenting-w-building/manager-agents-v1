@@ -1,0 +1,16 @@
+{
+    "agents": {
+        "ElizaOS": {
+            "endpoint": "http://localhost:8000/elizaOS-eliza",
+            "api_key": "your-elizaos-api-key-here"
+        },
+        "Tron": {
+            "endpoint": "http://localhost:8000/elizaOS-eliza",
+            "api_key": "your-tron-api-key-here"
+        },
+        "Goose": {
+            "endpoint": "http://localhost:8000/block-goose",
+            "api_key": "your-goose-api-key-here"
+        }
+    }
+}
