@@ -6,7 +6,7 @@ def start_uvicorn_detached():
     # Change these parameters as needed for your specific API
     host = "0.0.0.0"
     port = "8080"
-    app_module = "main:app"  # Replace with your actual module:app
+    app_module = "api:app"  # Replace with your actual module:app
     
     # Construct the command
     command = f"nohup uvicorn {app_module} --host {host} --port {port} --reload > uvicorn.log 2>&1 &"
