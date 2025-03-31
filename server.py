@@ -9,7 +9,7 @@ def start_uvicorn_detached():
     app_module = "api:app"  # Replace with your actual module:app
     
     # Construct the command
-    command = f"nohup uvicorn {app_module} --host {host} --port {port} --reload > uvicorn.log 2>&1 &"
+    command = f"nohup env/bin/python -m uvicorn {app_module} --host {host} --port {port} --reload > uvicorn.log 2>&1 &"
     
     print(f"Starting uvicorn server with command: {command}")
     subprocess.run(command, shell=True)
