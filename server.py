@@ -5,7 +5,7 @@ import os
 def start_uvicorn_detached():
     # Change these parameters as needed for your specific API
     host = "0.0.0.0"
-    port = "8080"
+    port = "8000"
     app_module = "api:app"  # Replace with your actual module:app
     
     # Construct the command

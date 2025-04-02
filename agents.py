@@ -1,8 +1,8 @@
 import requests
 
-ELIZAOS_API_ENDPOINT = "http://localhost:8000/elizaOS-eliza"
-TRON_API_ENDPOINT = "http://localhost:8000/elizaOS-eliza"
-GOOSE_API_ENDPOINT = "http://localhost:8000/block-goose"
+ELIZAOS_API_ENDPOINT = "http://localhost:8080/elizaOS-eliza"
+TRON_API_ENDPOINT = "http://localhost:8080/elizaOS-eliza"
+GOOSE_API_ENDPOINT = "http://localhost:8080/block-goose"
 
 # API keys for the framework endpoints
 ELIZAOS_API_KEY = "your-elizaos-api-key-here"
