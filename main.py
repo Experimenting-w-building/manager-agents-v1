@@ -94,6 +94,8 @@ class FrameworkManagerAgent:
             agents_list = result['agents']
             # Extract the required agents using dictionary notation
             required_agents = {agent['agent_type'] for agent in agents_list if agent['needed']}
+            if not required_agents:  # Check if required_agents is empty
+                return set(self.framework_agents.keys())  # Return all agents
             return required_agents
         except Exception as e:
             # Fallback if parsing still fails
